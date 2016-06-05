@@ -1,0 +1,6 @@
+require_relative 'lib/foo_mangler'
+
+config_file, input_file, output_file = ARGV
+configuration = FooMangler::Configuration.load config_file, input_file_name: input_file, output_file_name: output_file
+
+configuration.mangler.mangle configuration.input, configuration.output
