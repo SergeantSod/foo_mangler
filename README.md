@@ -17,7 +17,7 @@ Since this kind of stuff comes up annoyingly often, the primary design goals are
     * Multiple transformations can be added
 * Configurability via a DSL
 
-## TODOs
+## TODO
 
 * Add specs, since the current code was just hacked together
 * Clean up
