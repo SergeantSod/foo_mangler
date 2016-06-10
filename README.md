@@ -1,41 +1,27 @@
 # FooMangler
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/foo_mangler`. To experiment with that code, run `bin/console` for an interactive prompt.
+A simple gem that is supposed to help me convert between different tabular formats (primarily CSV).
 
-TODO: Delete this and the text above, and describe your gem
+It reads some tabular format from somewhere mangles it (thus the name) according to some user-defined rules, and writes the result in some tabular format to somewhere.
 
-## Installation
+Since this kind of stuff comes up annoyingly often, the primary design goals are:
 
-Add this line to your application's Gemfile:
+* Extensibility
+  * Different import sources and export targets
+    * Currently local files only
+  * Different import formats and export formats
+    * Currently CSV only
+  * Pluggable transformations
+    * Simple, convenient representation
+      * Rows are represented as Hashes
+    * Multiple transformations can be added
+* Configurability via a DSL
 
-```ruby
-gem 'foo_mangler'
-```
+## TODOs
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install foo_mangler
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/foo_mangler.
-
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
+* Add specs, since the current code was just hacked together
+* Clean up
+  * Current DSL
+* Add
+  * Runner and proper executable
+  * OptionParsing
