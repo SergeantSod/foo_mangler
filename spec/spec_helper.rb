@@ -27,7 +27,8 @@ end
 def invoke_runner(*runner_arguments)
   stdout, stderr, status = Open3.capture3(runner_path, *runner_arguments)
   unless status.success?
-  # TODO Improve the error message. Maybe even extract another matcher
+  # TODO Fix indentation for error message.
+  # TODO Maybe even extract another matcher
   raise """
           Runner failed, with exit status #{status.to_i}
           Standard output:
