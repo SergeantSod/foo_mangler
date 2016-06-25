@@ -1,2 +1,5 @@
-Verwendungszweck;Blabb
-foo;bar
+Kontonummer;Buchungsdatum;Valuta;Empfaenger 1;Empfaenger 2;Verwendungszweck;Betrag;Waehrung
+1234567890;20.06.2016;20.06.2016;;;Rüchy Rüch;-11,52;EUR
+1234567890;21.06.2016;21.06.2016;;;Montgomery Böäns;-5,65;EUR
+1234567890;22.06.2016;22.06.2016;;;Mr. Monöpölü;-49,90;EUR
+1234567890;22.06.2016;22.06.2016;;;ßcrooge MäcDöck;-100,00;EUR
