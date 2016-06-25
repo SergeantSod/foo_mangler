@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Johannes Pirkl"]
   spec.email         = ["guess@where.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Simple transformation from text input to text output described by a DSL}
+  spec.description   = %q{A utility to take an arbitrary input file in a tabular format such as CSV and a configuration in a Ruby DSL that describes what output is to be produced }
+  spec.homepage      = "https://github.com/SergeantSod/foo_mangler"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
